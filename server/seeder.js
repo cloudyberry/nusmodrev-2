@@ -24,14 +24,14 @@ Meteor.startup(function() {
       var user0Id = Meteor.users.findOne({username: 'Kaining'})._id;
 
       Jokes.insert({
-        jokeName: "CS1231: Discrete Structures",
-        jokePost: "Tutorials are extremely tough",
-        semester: "AY1718 S1",
+        jokeName: "CS1020: Data Structures and Algorithms",
+        jokePost: "Lectures are so hard to understand. tutorials are even harder. DONT EVEN BOTHER TRYING",
+        semester: "AY1718 S2",
         diff: "high",
-        recommendation: "3",
+        recommendation: "2",
         workload: "low",
         steepness: "high",
-        author: "Kaining",
+        author: "Pamela",
         date: date,
         createdAt: new Date(),
         laughScore: 0,
@@ -53,8 +53,8 @@ Meteor.startup(function() {
           laughScore: 0,
           frownScore: 0,
           pukeScore: 0,
-          year: '1',
-          school:'School of Computing',
+          year: '4',
+          school:'School of Engineering',
         }
       });
 
@@ -90,8 +90,8 @@ Meteor.startup(function() {
           laughScore: 0,
           frownScore: 0,
           pukeScore: 0,
-          year: '1',
-          school:'School of Computing',
+          year: '2',
+          school:'Faculty of Arts and Social Science',
         }
       });
 
@@ -120,15 +120,15 @@ Meteor.startup(function() {
 
       // User 3
       Accounts.createUser({
-        username: 'User8',
-        email: 'user8@example.com',
-        password: 'password',
+        username: 'pampam',
+        email: 'berrycool@hotmail.com',
+        password: 'pampam',
 
         profile: {
           laughScore: 0,
           frownScore: 0,
           pukeScore: 0,
-          year: '1',
+          year: '2',
           school:'School of Computing',
         }
       });
@@ -166,18 +166,18 @@ Meteor.startup(function() {
           frownScore: 0,
           pukeScore: 0,
           year: '1',
-          school:'School of Computing',
+          school:'Faculty of Science',
         }
       });
 
       var user9Id = Meteor.users.findOne({username: 'User9'})._id;
 
       Jokes.insert({
-       jokeName: "CS1231: Discrete Structures",
-        jokePost: "Tutorials are extremely tough",
+       jokeName: "IS1103: Business Communications",
+        jokePost: "You can do your project during lecture time",
         semester: "AY1718 S1",
-        diff: "high",
-        recommendation: "3",
+        diff: "Moderate",
+        recommendation: "4",
         workload: "low",
         steepness: "high",
         author: "User9",
@@ -202,8 +202,8 @@ Meteor.startup(function() {
           laughScore: 0,
           frownScore: 0,
           pukeScore: 0,
-          year: '1',
-          school:'School of Computing',
+          year: '3',
+          school:'School of Design and Environment',
         }
       });
 
