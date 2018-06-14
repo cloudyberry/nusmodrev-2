@@ -49,20 +49,11 @@ Template.profile.helpers({
 		return Meteor.user().profile.laughScore;
 	},
 
-	userFrownScore: function() {
-			return Meteor.user().profile.frownScore;
-	},
+
 
 	userPukeScore: function() {
 		return Meteor.user().profile.pukeScore;
 	},
-
-	UserImages: function() {
-		var username = Meteor.user().username;
-		var userId = Meteor.userId();
-		var URL = UserImages.findOne({username: username}, {userId: userId});
-		return URL;
-	}
 
 });
 

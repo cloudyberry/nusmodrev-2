@@ -48,29 +48,6 @@ Template.jokes.events({
 		}
 	},
 
-	"click #frown": function() {
-		var thisUser = Meteor.userId();
-		var thisJoke = Jokes.findOne({_id: this._id})._id;
-		var jokeAuthor = Jokes.findOne({_id: this._id}).userId;
-		var Name = Meteor.user().username;
-		var thisJokesVotes = Jokes.findOne({_id: this._id}, {voted: {$in: Name}}).voted;
-
-		if (thisJokesVotes.indexOf(Name) > -1) {
-			Bert.alert("You cannot vote twice", "danger", "growl-top-right");
-			// In the array!, meaning user has voted
-		} else {
-			// Not in the Array, Do stuff.
-			Meteor.call("countVote", thisJoke, Name);
-			Meteor.call("userPointFrown", jokeAuthor);
-			Meteor.call("frownVote", thisUser, thisJoke);
-			Bert.alert("Your Vote Was Placed", "success", "growl-top-right");
-
-		}
-
-		if (Name == thisJokesVotes) {
-			Bert.alert("You cannot vote for your own review", "danger", "growl-top-right");
-		}
-	},
 
 	"click #puke": function() {
 		var thisUser = Meteor.userId();

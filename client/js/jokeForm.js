@@ -12,8 +12,8 @@ Template.jokeForm.events({
 		var workload = event.target.workload.value;
 		var steepness = event.target.steepness.value;
 		var jokePost = event.target.jokePost.value;
-		
-		
+
+
 		//add new column and labels!
 
 		if (isNotEmpty(jokeName) &&
@@ -29,7 +29,7 @@ Template.jokeForm.events({
 
 		} else {
 
-			Bert.alert("something went wrong", "danger", "growl-top-right");
+			Bert.alert("Please fill in all fields", "danger", "growl-top-right");
 		}
 
 		return false; // prevent submit
